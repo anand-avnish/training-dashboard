@@ -2,48 +2,46 @@
 
 *{
     margin:0;
-    /* padding: 0; */
     font-family: 'Poppins', sans-serif;
 }
 
-/* .box{
+body{
     width:100vw;
-    height:100vh;
-} */
+}
 
 .nav{
     background-color:#2C3034;
     max-width:calc(25vw - 2px);
     min-width:calc(25vw - 2px);
-    /* max-height:100vh;
-    min-height:100vh; */
     height: 100vh;
     float:left;
     border-right: 2px solid #4C4F52;
     color:#C1C1C3;
-    /* padding:20px; */
+}
+
+.content{
+    margin:0;
+    padding:0;
+    width:75vw;
+    height:100vh;
+    float:left;
 }
 
 .header{
     background-color:#2C3034;
-    width:73.6vw;
-    /* min-width:74vw; */
+    width:75vw;
     float:left;
     height:17vh;
     border-bottom: 2px solid #4C4F52;
-    /* padding:20px; */
     color:#C3C3C5;
-    /* clear: left; */
 }
 
 .main{
     background-color: #23242B;
-    max-width:73.6vw;
-    min-width:73.6vw;
+    width:75vw;
     float:left;
     height:calc(83vh - 2px);
     color: #C0BFC1;
-    /* padding:20px; */
 }
 
 .title{
@@ -75,7 +73,7 @@
 }
 
 .row1{
-    margin:5px 0;
+    /* margin:5px 0; */
     height:6vh;
     display:flex;
     align-items: center;
@@ -159,7 +157,7 @@
 .proj{
     width:65%;
     float:left;
-    padding:20px 10px;
+    padding:20px 20px;
 }
 
 .right{
@@ -184,7 +182,7 @@
     max-width: 100%;
     min-width:90%;
     padding:20px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 10px;
     border-left:10px solid #5D4192;
     background-color: #2C3034;
@@ -234,6 +232,10 @@
 
 .iTitle{
     font-size:10px;
+}
+
+.Rtitle2{
+    margin-top:20px;
 }
 
 /* .iContent{
