@@ -7,30 +7,42 @@
 
 body{
     width:100vw;
+    display:flex;
 }
 
 .nav{
     background-color:#2C3034;
-    max-width:calc(25vw - 2px);
-    min-width:calc(25vw - 2px);
+    /* max-width:250px;
+    min-width:250px; */
     height: 100vh;
     float:left;
     border-right: 2px solid #4C4F52;
     color:#C1C1C3;
+    flex-shrink:1;
+    position: sticky;
+    top:0;
+    left:0;
 }
 
-.content{
+.manage{
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .content{
     margin:0;
     padding:0;
-    width:75vw;
+    width:100%;
     height:100vh;
     float:left;
-}
+} */
 
 .header{
     background-color:#2C3034;
-    width:75vw;
-    float:left;
+    width:100%;
+    /* float:left; */
     height:17vh;
     border-bottom: 2px solid #4C4F52;
     color:#C3C3C5;
@@ -38,14 +50,18 @@ body{
 
 .main{
     background-color: #23242B;
-    width:75vw;
-    float:left;
-    height:calc(83vh - 2px);
+    width:100%;
+    /* float:left; */
+    /* height:calc(83vh - 2px); */
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
     color: #C0BFC1;
 }
 
 .title{
-    font-size: 25px;
+    width:100%;
+    font-size: 130%;
     display:flex;
     align-items: center;
     margin:20px;
@@ -57,19 +73,35 @@ body{
 
 .nav-list{
     margin-top:40px;
-    font-size: 20px;
+    font-size: 1.2rem;
     color:#808080;
+    /* padding-right:10%;
+    padding-left:10%; */
+    padding:0;
 }
 
 .nav-item{
+    padding-left:10%;
+    padding-right:10%;
     list-style-type: none;
     margin-top:10px;
     display:flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.nav-item:hover, .active{
+    background-color:#34383C;
+    border-left:4px solid #DD606C;
+    color:#C4C4C6;
 }
 
 .nav-icon{
     margin-right:10px;
+}
+
+.nav-item:hover .nav-icon, .active .nav-icon{
+    color:#DD606C;
 }
 
 .row1{
@@ -155,14 +187,30 @@ body{
 }
 
 .proj{
-    width:65%;
-    float:left;
+    /* min-width:65%;
+    max-width: 100%; */
+    /* float:left; */
+    width: 65%;
     padding:20px 20px;
+    
+}
+
+.projList{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-around;
 }
 
 .right{
+    /* flex-grow: 1; */
     width:28%;
-    float:left;
+    /* min-width: 28%;
+    max-width: 100%; */
+    /* float:left; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding:20px 10px;
 }
 
@@ -179,8 +227,10 @@ body{
 
 .card{
     margin-top:10px;
-    max-width: 100%;
-    min-width:90%;
+    /* max-width: 100px;
+    min-width:100px; */
+    min-width:220px;
+    max-width:40%;
     padding:20px;
     padding-bottom: 15px;
     font-size: 10px;
